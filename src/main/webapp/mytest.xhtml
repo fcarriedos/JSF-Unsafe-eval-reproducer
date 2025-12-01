@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core">
+<h:head>
+    <title>CommandLink Example</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p>
+            <h:commandLink value="Click Me">
+ 			<f:ajax render="@none" oncomplete="console.log('Starting');" />
+ 			<f:ajax render="@none" oncomplete="console.log('Completed!')" />
+	    </h:commandLink>
+        </p>       
+    </h:form>
+</h:body>
+</html>
